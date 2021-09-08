@@ -1,3 +1,6 @@
+Make astronomy picture of the day the background picture. (If button is clicked)
+Mars weather report
+
 # (Application Name)
 
 #### (Brief Description of Application)
