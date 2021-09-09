@@ -17,3 +17,6 @@ body {
   text-align: center;
 
 }
+.showButton {
+  display: none;
+}
