@@ -20,3 +20,7 @@ body {
 .showButton {
   display: none;
 }
+
+.showEnd {
+  display: none;
+}

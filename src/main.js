@@ -49,6 +49,7 @@ $(document).ready(function() {
       $('.velocity').html(`Velocity: ${Math.floor(response.near_earth_objects[start][count].close_approach_data[0].relative_velocity.miles_per_hour)} MPH`);
       $('.link').html(`<a href =" ${response.near_earth_objects[start][count].nasa_jpl_url}">Additional Information</a>`);
     }
+    $(".showEnd").hide();
     $(".showButton").show();
     try {
       const isDateValid = checkDate(start);
@@ -76,7 +77,8 @@ $(document).ready(function() {
         if (total > count){
           count + 1;
         } else {
-          count = 0;
+          $(".showButton").hide();
+          return $(".showEnd").show();
         }
         getElements(response);
       }
