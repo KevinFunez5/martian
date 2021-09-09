@@ -46,6 +46,7 @@ $(document).ready(function() {
       $('.name').html(`Asteroid name: ${response.near_earth_objects[start][count].name}`);
       $('.diameter').html(`Estimated Diameter in Feet: ${Math.floor(response.near_earth_objects[start][count].estimated_diameter.feet.estimated_diameter_max)}`);
       $('.hazard').html(`Is hazardous: ${response.near_earth_objects[start][count].is_potentially_hazardous_asteroid}`);
+      $('.closeApproach').html(`Miss distance: ${Math.floor(response.near_earth_objects[start][count].close_approach_data[0].miss_distance.miles)} miles`);
       $('.velocity').html(`Velocity: ${Math.floor(response.near_earth_objects[start][count].close_approach_data[0].relative_velocity.miles_per_hour)} MPH`);
       $('.link').html(`<a href =" ${response.near_earth_objects[start][count].nasa_jpl_url}">Additional Information</a>`);
     }
@@ -57,6 +58,7 @@ $(document).ready(function() {
         console.error(isDateValid.message)
         throw RangeError("Not a valid Date! You IDIOT!!");
       } else {
+        $("#displayDate").hide();
         console.log("Try was successful, no need to catch. Not an idiot :)");
         // $("#displayDate").text("This is a valid date.");
       }
@@ -89,6 +91,7 @@ $(document).ready(function() {
       $('.name').html(`Asteroid name: ${response.near_earth_objects[start2][count].name}`);
       $('.diameter').html(`Estimated Diameter in Feet: ${Math.floor(response.near_earth_objects[start2][count].estimated_diameter.feet.estimated_diameter_max)}`);
       $('.hazard').html(`Is hazardous: ${response.near_earth_objects[start2][count].is_potentially_hazardous_asteroid}`);
+      $('.closeApproach').html(`Miss distance: ${Math.floor(response.near_earth_objects[start2][count].close_approach_data[0].miss_distance.miles)} miles`);
       $('.velocity').html(`Velocity: ${Math.floor(response.near_earth_objects[start2][count].close_approach_data[0].relative_velocity.miles_per_hour)} MPH`);
       $('.link').html(`<a href =" ${response.near_earth_objects[start2][count].nasa_jpl_url}">Additional Information</a>`);
     }
