@@ -7,11 +7,25 @@ src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 <body>
   <div class="container">
-    <h1>Here's your space picture of the day!</h1>
-    <!-- <label for="number">Enter your number:</label>
-    <input id="number" type="text"> -->
-    <button class="btn-success" id="picOfTheDay">Picture of the day.</button>
-    <div class="displayPicture"></div>
+    <div class="stack">
+      <!-- <h1>Here's your space picture of the day!</h1> -->
+      <div class="form-group">
+        <label for="start">Enter Date:</label>
+        <input id="start" class="form-control" type="date">
+      </div>
+      <!-- <div class="form-group">
+        <label for="end">Enter End Date:</label>
+        <input id="end" class="form-control" type="date">
+      </div> -->
+      <button class="btn-success" id="submit">Submit your dates</button>  
+      <div class="name"></div>
+      <div class="diameter"></div>
+      <div class="hazard"></div>
+      <div class="velocity"></div>
+      <div class = "link"></div>
+      <div id = displayDate></div>
+    </div>
+    <div class="displayPicture" ></div>
   </div>
 </body>
 </html>

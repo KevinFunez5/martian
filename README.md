@@ -1,5 +1,6 @@
-Make astronomy picture of the day the background picture. (If button is clicked)
-Mars weather report
+Make astronomy picture of the day the background picture. (CHECKED)
+Look up astroids per userinput of dates.
+
 
 # (Application Name)
 
